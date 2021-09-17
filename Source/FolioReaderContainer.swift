@@ -170,7 +170,7 @@ open class FolioReaderContainer: UIViewController {
                     }
                     self.centerViewController?.reloadData()
                     self.folioReader.isReaderReady = true
-                    self.folioReader.delegate?.folioReader?(self.folioReader, didFinishedLoading: self.book)
+                    self.folioReader.delegate?.folioReader(self.folioReader, didFinishedLoading: self.book)
                 }
             } catch {
                 self.errorOnLoad = true
